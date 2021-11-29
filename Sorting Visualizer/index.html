@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="./css/style.css">
+	<style>
+	a:link {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+	}
+	
+	a:visited {
+	color: mauve;
+	background-color: transparent;
+	text-decoration: none;
+	}
+	
+	a:hover {
+	color: green;
+	background-color: transparent;
+	text-decoration: underline;
+	}
+	
+	a:active {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+	}
+	</style>
+	
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
+                <p>Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+                <button id="a_generate">Generate New Array!</button>
+            </div>
+
+            <div class="header_right">
+                <p style="color:orange;" class="nav-heading">Sorting Visualizer <img src="SortingVisualizer.jpg" alt="Image not found" width="200" height="100"></p>
+
+                <div class="algos">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button style="margin-right: 0px;">Heap</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+			<div style="background-image: url('background1.jpg');">
+			<br>
+			<br>
+			<p style="text-align:center;"><a href="Time and Space Complexities.html">Time and Space Complexities</a></p><br><br><br>
+			<p style="text-align:center;"><a href="Advantages and Dis-advantages of Sorting Algorithms.html">Advantages and Dis-advantages of Sorting Algorithms</a></p><br><br><br>
+			<p style="text-align:center;"><a href="Sorting Algorithms.html">Sorting Algorithms</a></p>
+			<br>
+			<br>
+			<br>
+			</div>
+        </div>
+			
+        <div id="array_container">
+            
+        </div>
+		
+		<div id="Info_Cont2">
+			<div style="background-image: url('background1.jpg');">
+			<p style="text-align:center; color:red; text-transform:capitalize;"><u>Sorting Algorithms Types & Uses</u></p><br>
+            <p style="text-align:center;"><a href="bubble sort.html">Bubble Sort</a></p><br>
+			<p style="text-align:center;"><a href="insertion sort.html">Insertion Sort</a></p><br>
+			<p style="text-align:center;"><a href="selection sort.html">Selection Sort</a></p><br>
+			<p style="text-align:center;"><a href="merge sort.html">Merge Sort</a></p><br>
+			<p style="text-align:center;"><a href="quick sort.html">Quick Sort</a></p><br>
+			<p style="text-align:center;"><a href="heap sort.html">Heap Sort</a></p>
+			<br>
+			<br>
+			<br>
+			</div>
+        </div>
+		<br><marquee style="color:magenta;" behavior="scroll" direction="left" scrollamount="12" width="100%" height="25px" bgcolor="wheat"><u>Sorting is the processing of arranging the data in ascending and descending order.</u></marquee><br><br>
+		<div>
+			<br><center><p style="color:green;">Sorting of Playing Cards</p></center>
+			<center><img src="PlayingCards.gif" alt="Image not found" width="300" height="300"></center>
+		</div>
+		<div>
+			<br><center><p style="color:green;">Decision tree to Choose Best Sorting Algorithm</p></center>
+			<center><img src="BestAlgo.jpg" alt="Image not found" width="300" height="300"></center>
+		</div>
+		<div>
+			<br><center><p style="color:green;">observation of Sorting in simpson-evolution</p></center>
+			<center><img src="simpson-evolution.jpg" alt="Image not found" width="285" height="300"></center>
+		</div>
+    </section>
+	
+	<br><br>
+	
+    <footer>
+			<div style="background-image: url('background2.jpg');">
+			<center><h1><p style="color:cyan;"><u>Sorting Algorithms</u></p></h1></center><br>
+			<h6>1. Sorting Algorithms are methods of reorganizing a large number of items into some specific order such as highest to lowest, or vice-versa, or even in some alphabetical order.</h6><br>
+			<h6>2. These algorithms take an input list, processes it (i.e, performs some operations on it) and produce the sorted list.</h6><br>
+			<h6>3. The most common example we experience every day is sorting clothes or other items on an e-commerce website either by lowest-price to highest, or list by popularity, or some other order.</h6>
+			<br><br>
+			</div>
+	</footer>
+
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Heap Sort</title>
+<style>
+h1{
+color:red;
+text-align:center;
+font-weight:bold;
+}
+p{
+color:black;
+font-weight:normal;
+}
+body{
+background-image:url('sortbackground.jpg');
+background-repeat:no repeat;
+background-attatchment:fixed;
+background-size:cover;
+}
+</style>
+</head>
+<body>
+<h1><u>Heap Sort</u></h1>
+<h3><p style="text-align:justify;">Before we get into Heap sort, let's understand what a Heap data structure is. Heap is a special kind of binary tree in which elements are stored in a hierarchical manner. Heap has some additional rules it must always have a heap structure, where all the levels of the binary tree are filled up from left to right. Second, it must either be ordered as a max heap or a min-heap. Max heap Parent node is greater than or equal to the value of its children node. Min heap Parent node is less than or equal to the value of its children node. In Heap sort, we will be dealing with Max heap. Using max heaps, we can sort an unsorted array of elements. In simple, this is how it works</p></h3>
+<div>
+<h3><center><p style="color:fuchsia;"><u>Representation for Heap Sort</u></p></center></h3>
+<center><img src="heap sort representation.png" alt="Image not found" width="300" height="300"></center>
+</div>
+<div>
+<h3><center><p style="color:blue;"><u>Example for Heap Sort(Max Heap)</u></p></center></h3>
+<h3><p style="text-align:center;">Lets see how sorting takes place with the help of heap.Consider an array arr[] = {4, 3, 7, 1, 8, 5}</p></h3>
+<h3><p style="text-align:center;">1) Firstly, lets convert the given array to a binary tree.The representation of a binary tree for the given array looks as shown below.</p></h3>
+<center><img src="heap sort methodology 1.png" alt="Image not found" width="300" height="300"></center>
+<h3><p style="text-align:center;">2) Next, build max-heap from the above tree. A max tree is where all the parent nodes are of higher value than the children nodes.</p></h3>
+<center><img src="heap sort methodology 2.png" alt="Image not found" width="300" height="300"></center>
+<h3><p style="text-align:center;">3) Now, swap the root node with the last element of the heap node. This means largest value has moved to its correct position. So, remove the largest value from the tree. After removing, the tree looks as shown below.</p></h3>
+<center><img src="heap sort methodology 3.png" alt="Image not found" width="300" height="300"></center>
+<h3><p style="text-align:center;">4) Repeat step 3 until no elements are left in the heap</p></h3>
+<center><img src="heap sort methodology 4.png" alt="Image not found" width="300" height="300"></center><br>
+<center><img src="heap sort methodology 5.png" alt="Image not found" width="300" height="300"></center><br>
+<center><img src="heap sort methodology 6.png" alt="Image not found" width="300" height="300"></center><br>
+<center><img src="heap sort methodology 7.png" alt="Image not found" width="300" height="300"></center><br>
+<center><img src="heap sort methodology 8.png" alt="Image not found" width="300" height="300"></center>
+
+</div>
+
+</body>
+</html>
