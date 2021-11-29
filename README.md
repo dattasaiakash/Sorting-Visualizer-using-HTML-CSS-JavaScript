@@ -1,1 +1,2 @@
 # Sorting-Visualizer-using-HTML-CSS-JavaScript
+In this project, I had Created a website to visualize detail step by step working mechanism of various sorting algorithms like bubble sort, selection sort, insertion sort. Here, Each element of the array is displayed as a bar-graphs. This website allows the users to Generate New Array, select the sorting algorithm, select the array size and speed of the visualization. By Using this website the user can understand the working process of the sorting Algorithms quickly and Easily. 
